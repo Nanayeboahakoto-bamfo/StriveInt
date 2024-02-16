@@ -46,47 +46,47 @@ const AddMentor = () => {
     }
   };
 
-  const handleAddImage = async () => {
-    try {
-      let uploadedImageUrl = "";
-      if (selectedFiles.length > 0) {
-        const formData = new FormData();
-        selectedFiles.forEach((file) => {
-          formData.append("file", file, file.name);
-        });
+  // const handleAddImage = async () => {
+  //   try {
+  //     let uploadedImageUrl = "";
+  //     if (selectedFiles.length > 0) {
+  //       const formData = new FormData();
+  //       selectedFiles.forEach((file) => {
+  //         formData.append("file", file, file.name);
+  //       });
 
-        const response = await uploadFile(formData).unwrap();
+  //       const response = await uploadFile(formData).unwrap();
 
-        if (Array.isArray(response) && response.length > 0) {
-          uploadedImageUrl = response[0].imageUrl;
-          notifytwo();
-        }
-      }
+  //       if (Array.isArray(response) && response.length > 0) {
+  //         uploadedImageUrl = response[0].imageUrl;
+  //         notifytwo();
+  //       }
+  //     }
 
-      const newPostData = {
-        mentorimageurl: uploadedImageUrl,
-        firstname,
-        lastname,
-        email,
-        password,
-        repeatpassword,
-        country,
-        number,
-        bio,
-        university,
-        studylevel,
-        department,
-        coursetitle,
-      };
+  //     const newPostData = {
+  //       mentorimageurl: uploadedImageUrl,
+  //       firstname,
+  //       lastname,
+  //       email,
+  //       password,
+  //       repeatpassword,
+  //       country,
+  //       number,
+  //       bio,
+  //       university,
+  //       studylevel,
+  //       department,
+  //       coursetitle,
+  //     };
 
-      await addPost(newPostData).unwrap();
-      notify();
-      router.push("/admin/pages/addmentor");
-    } catch (error) {
-      // Handle error
-      console.error("Error adding post:", error);
-    }
-  };
+  //     await addPost(newPostData).unwrap();
+  //     notify();
+  //     router.push("/admin/pages/addmentor");
+  //   } catch (error) {
+  //     // Handle error
+  //     console.error("Error adding post:", error);
+  //   }
+  // };
 
   const handleClear = () => {
     setMentorImageUrl("");
@@ -287,7 +287,7 @@ const AddMentor = () => {
           <button
             className="bg-[#0676D6] text-white px-10 py-2 rounded-md"
             type="button"
-            onClick={handleAddImage}
+         //   onClick={handleAddImage}
             disabled={isLoading}
           >
             {isLoading ? "Submitting" : "Submit"}
