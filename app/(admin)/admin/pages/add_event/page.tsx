@@ -58,7 +58,7 @@ const AddEvent = () => {
         location,
       };
 
-      await addPost(newPostData).unwrap();
+      // await addPost(newPostData).unwrap();
       notify();
       router.push("/admin/pages/addmentor");
     } catch (error) {
