@@ -1,0 +1,79 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  color: #121212;
+  font-family: Inter;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem;
+  text-transform: capitalize;
+}
+
+.button {
+  border-radius: 0.5rem;
+  background: #066fcf;
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+}
+
+.mentorGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mentorFlex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.storiesBg {
+  background-color: #066fcf;
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.eventsBg {
+  background-color: rgb(249 250 251);
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .mentorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .storiesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mentorGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .storiesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .eventGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

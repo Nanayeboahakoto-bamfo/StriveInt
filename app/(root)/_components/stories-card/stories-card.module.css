@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  /* min-width: 12rem; */
+}
+
+.wrapper {
+  background-color: white;
+  padding: 1rem;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.wrapper > * + * {
+  margin-top: 1rem;
+}
+
+.cover > * + * {
+  margin-top: 1rem;
+}
+
+.institute {
+  color: #066fcf;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-transform: capitalize;
+}
+
+.paragraph {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.readMore {
+  color: #066fcf;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.name {
+  color: #121212;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+
+.work {
+  color: #066fcf;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+  .work,
+  .readMore {
+    font-size: 1.125rem;
+  }
+}

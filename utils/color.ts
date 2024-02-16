@@ -1,0 +1,5 @@
+export const sidebarcolor="#066FCF"
+export const dashboardcolor="#E7F8FD"
+export const searchinputboxcolor="#EDEEF0"
+export const inputformfieldcolor="#FFF"
+export const bordercolor="rgba(0, 0, 0, 0.50)"

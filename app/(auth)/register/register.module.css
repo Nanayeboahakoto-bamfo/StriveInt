@@ -1,0 +1,28 @@
+.container {
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: #e7f8fd;
+}
+
+.wrapper {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
