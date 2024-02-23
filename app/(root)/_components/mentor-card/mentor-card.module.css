@@ -40,20 +40,21 @@
 
 .categoryText {
   color: #121212;
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.125rem;
+  font-weight: 400;
+  line-height: 1rem;
   text-transform: capitalize;
 }
 
 .paragraph {
   color: #333;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
-  text-transform: capitalize;
+  text-transform: none;
+  text-align: justify;
 }
 
 .button {
