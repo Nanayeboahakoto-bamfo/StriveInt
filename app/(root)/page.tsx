@@ -13,14 +13,11 @@ import clsx from "clsx";
 export default function Home() {
   const mentor_work_at_images: string[] = [
     "coventry-university.png",
-    "network-plus.jpeg",
     "toyota.png",
     "NHS.jpg",
     "siemens.jpg",
     "national-grid.webp",
     "Quacquarelli-Symonds.webp",
-    "royalnavy.webp",
-    "university-of-bolton.png",
   ];
   
   return (
