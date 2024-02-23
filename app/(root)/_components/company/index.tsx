@@ -18,7 +18,7 @@ const Company = ({ path }: { path: string }) => {
         <Image
           src={`/logos/${path}`}
           alt="logo"
-          height={50}
+          height={100}
           width={150}
           style={{ objectFit: "cover" }}
         />
