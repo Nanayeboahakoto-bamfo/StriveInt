@@ -17,7 +17,7 @@ const MentorCard1 = () => {
     <div data-aos="zoom-in">
       <div className={styles.imageContainer}>
         <Image
-          src="/Nana.png"
+          src="/nana.jpg"
           alt="mentor"
           fill
           style={{ objectFit: "contain" }}
