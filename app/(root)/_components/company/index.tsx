@@ -20,7 +20,7 @@ const Company = ({ path }: { path: string }) => {
           alt="logo"
           height={50}
           width={150}
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: "cover" }}
         />
       </div>
     </div>
