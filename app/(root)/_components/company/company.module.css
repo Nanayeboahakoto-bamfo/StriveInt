@@ -1,6 +1,6 @@
 .box {
   border: 2px solid rgba(0, 0, 0, 0.18);
-  border-radius: 0.75rem;
+  border-radius: 50%;
 }
 
 .cover {
