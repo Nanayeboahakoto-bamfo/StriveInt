@@ -12,38 +12,44 @@ import clsx from "clsx";
 
 export default function Home() {
   const mentor_work_at_images: string[] = [
+    "Quacquarelli-Symonds.webp",
+    "national-grid.webp",
     "coventry-university.png",
     "toyota.png",
     "NHS.jpg",
     "siemens.jpg",
-    "national-grid.webp",
-    "Quacquarelli-Symonds.webp",
   ];
   
   return (
     <main>
       <Hero />
+      <picture>
+        <img src="/Vector.png" alt="" style={{ width: "100%" }} />
+      </picture> 
       <div className="container">
-        <div className={styles.content}>
-          <h3 className={styles.heading}>Meet Our Mentors</h3>
-          <Link href="/register" className={styles.button}>
-            View All
-          </Link>
-        </div>
-        <div className={styles.mentorGrid}>
-          <MentorCard/>
-          <MentorCard1/>
-          <MentorCard2/>
-        </div>
+          <div className={styles.content}>
+            <h3 className={styles.heading}>Meet Our Mentors</h3>
+            <Link href="/register" className={styles.button}>
+              View All
+            </Link>
+          </div>
+          <div className={styles.mentorGrid}>
+            <MentorCard/>
+            <MentorCard1/>
+            <MentorCard2/>
+          </div>
       </div>
+     
       <div className="container">
-        <div className={styles.content}>
-          <h3 className={styles.heading}>Our mentors work at</h3>
-        </div>
-        <div className={clsx(styles.mentorFlex, "no-scrollbar")}>
-          {mentor_work_at_images.map((path, i) => (
-            <Company key={path + i} path={path} />
-          ))}
+        <div>
+          <div className={styles.content}>
+            <h3 className={styles.heading}>Our mentors work at</h3>
+          </div>
+          <div className={clsx(styles.mentorFlex, "no-scrollbar")}>
+            {mentor_work_at_images.map((path, i) => (
+              <Company key={path + i} path={path} />
+            ))}
+          </div>
         </div>
       </div>
       <picture>
