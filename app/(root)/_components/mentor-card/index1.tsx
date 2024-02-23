@@ -17,7 +17,7 @@ const MentorCard1 = () => {
     <div data-aos="zoom-in">
       <div className={styles.imageContainer}>
         <Image
-          src="/nana.jpg"
+          src="/Nana.jpg"
           alt="mentor"
           fill
           style={{ objectFit: "contain" }}
@@ -25,6 +25,12 @@ const MentorCard1 = () => {
       </div>
       <div className={styles.wrapper}>
         <h6 className={styles.heading}>Nana Yeboah Akoto-Bamfo</h6>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
+            <span className={styles.categoryText}> Country: Ghana</span>
+          </div>
+        </div>
+        <br/>
         <div className={styles.cover}>
           <div className={styles.flex}>
             <Bag size={20} className={styles.icon} />
@@ -36,7 +42,8 @@ const MentorCard1 = () => {
             <span className={styles.categoryText}>Job Title: Software engineer</span>
           </div>
         </div>
-        <p className={styles.paragraph}>Education Info:</p>
+        <br/>
+        <h6 className={styles.heading}>Education:</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
           <Atom size={20} className={styles.icon} />
@@ -55,8 +62,8 @@ const MentorCard1 = () => {
             <span className={styles.categoryText}>Course: Msc Computer Science</span>
           </div>
         </div>
-
-        <p className={styles.paragraph}>Bio:</p>
+        <br/>
+        <h6 className={styles.heading}>Bio:</h6>
         <p className={styles.paragraph}>
         Nana is a skilled software engineer who honed his craft at Coventry University. 
         With a passion for problem-solving and innovation, he excels in developing efficient 
