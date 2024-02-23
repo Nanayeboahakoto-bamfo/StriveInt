@@ -27,6 +27,12 @@ const MentorCard2 = () => {
         <h6 className={styles.heading}>Obinna Okereke</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
+            <span className={styles.categoryText}> Country: Nigeria</span>
+          </div>
+        </div>
+        <br/>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
             <Bag size={20} className={styles.icon} />
             <span className={styles.categoryText}>Employed At: Coventry University</span>
           </div>
@@ -36,7 +42,8 @@ const MentorCard2 = () => {
             <span className={styles.categoryText}>Job Title: Project Manager</span>
           </div>
         </div>
-        <p className={styles.paragraph}>Education Info:</p>
+        <br/>
+        <h6 className={styles.heading}>Education:</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
           <Atom size={20} className={styles.icon} />
@@ -55,12 +62,14 @@ const MentorCard2 = () => {
             <span className={styles.categoryText}>Course: Msc international Relations</span>
           </div>
         </div>
-
-        <p className={styles.paragraph}>Bio:</p>
+        <br/>
+        <h6 className={styles.heading}>Bio:</h6>
         <p className={styles.paragraph}>
-          Obinna is a project manager on cross-functional projects with experience in higher education marketing. 
-          He was a governor at Coventry University and as Deputy Panel Chair of the Teaching Excellence Framework
-          panel at the Office for Students.He is committed to students skills acquisition and value for money in higher education.
+        Obinna is a project manager on cross-functional projects with experience 
+        in higher education marketing. He was a governor at Coventry University 
+        and as Deputy Panel Chair of the Teaching Excellence Framework panel 
+        at the Office for Students.He is committed to students skills acquisition
+        and value for money in higher education.
         </p>
         <button className={styles.button}>Read more</button>
       </div>
