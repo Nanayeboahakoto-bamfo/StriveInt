@@ -85,9 +85,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <picture>
+      <picture>
         <img src="/Vector.png" alt="" style={{ width: "100%" }} />
-      </picture> */}
+      </picture>
     </>
   );
 };
