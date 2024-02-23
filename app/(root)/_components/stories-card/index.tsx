@@ -8,7 +8,7 @@ import { Quote } from "@/components/icons";
 
 import AOS from "aos";
 
-const StoriesCard = () => {
+const StoriesCard1 = () => {
   useLayoutEffect(() => {
     AOS.init({ once: false, offset: 0 });
   }, []);
@@ -27,14 +27,14 @@ const StoriesCard = () => {
         <div>
           <Quote size={24} style={{ color: "#066FCF" }} />
         </div>
-        <span className={styles.institute}>Havard University</span>
+        <span className={styles.institute}>Birmingham University</span>
         <p className={styles.paragraph}>
           Sed ut perspiciatis unde omnis natus error voluptatem
           laudantium,inventore veritatis et quasi architecto beatae vita dicta
           explicabo.
         </p>
         <div className={styles.cover}>
-          <h6 className={styles.name}>Selena Kate</h6>
+          <h6 className={styles.name}>Monica Barbosa</h6>
           <div
             style={{
               display: "flex",
@@ -42,13 +42,12 @@ const StoriesCard = () => {
               justifyContent: "space-between",
             }}
           >
-            <span className={styles.work}>Employed at: Google</span>
             <span className={styles.readMore}>READ STORY</span>
           </div>
         </div>
       </div>
     </div>
+    
   );
-};
-
-export default StoriesCard;
+}
+export default StoriesCard1;
