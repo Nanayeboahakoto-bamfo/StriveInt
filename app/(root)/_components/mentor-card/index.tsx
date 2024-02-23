@@ -3,10 +3,9 @@
 import React, { useLayoutEffect } from "react";
 import Image from "next/image";
 
-import { Bag, Atom } from "@/components/icons";
+import { Bag, Atom, Quote } from "@/components/icons";
 
-import styles from "./mentor-card.module.css";
-
+import styles from "./mentor-card.module.css"
 import AOS from "aos";
 
 const MentorCard = () => {
@@ -18,32 +17,56 @@ const MentorCard = () => {
     <div data-aos="zoom-in">
       <div className={styles.imageContainer}>
         <Image
-          src="/mentor.png"
+          src="/profile.png"
           alt="mentor"
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "contain" }}
         />
       </div>
       <div className={styles.wrapper}>
-        <h6 className={styles.heading}>Nana Yeboah Akoto-Bamfo</h6>
+        <h6 className={styles.heading}>Blessed Pepple</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
             <Bag size={20} className={styles.icon} />
-            <span className={styles.categoryText}>National Grid</span>
-          </div>
-
-          <div className={styles.flex}>
-            <Atom size={20} className={styles.icon} />
-            <span className={styles.categoryText}>Coventry University</span>
+            <span className={styles.categoryText}> Employed At: Quacquarelli-Symonds(QS)</span>
           </div>
         </div>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
+            <span className={styles.categoryText}>Job Title: Account Manager</span>
+          </div>
+        </div>
+        <p className={styles.paragraph}>Education:</p>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
+          <Atom size={20} className={styles.icon} />
+            <span className={styles.categoryText}>University: Coventry University</span>
+          </div>
+        </div>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
+           
+            <span className={styles.categoryText}>Department: Health and Life Science</span>
+          </div>
+        </div>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
+           
+            <span className={styles.categoryText}>Course: Bsc Biological and Chemical science</span>
+          </div>
+        </div>
+
+        <p className={styles.paragraph}>Bio:</p>
         <p className={styles.paragraph}>
-          Sed ut perspiciatis unde omnis iste natus error voluptatem accusantum
-          doloremq laudantium
+        I have over six years of experience working in the UK across multiple sectors.
+        My expertise is in business development and managing commercial partnerships for companies. 
+        Currently, I work in the technology industry for a leading service provider in higher education. 
+        I have also spent some time teaching bioscience related courses at university ...
+       
         </p>
         <button className={styles.button}>Read more</button>
       </div>
-    </div>
+   </div>
   );
 };
 
