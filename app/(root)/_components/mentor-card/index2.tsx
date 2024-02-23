@@ -58,10 +58,9 @@ const MentorCard2 = () => {
 
         <p className={styles.paragraph}>Bio:</p>
         <p className={styles.paragraph}>
-        Obinna Okereke is a dynamic project manager with a focus on leadership and organization. 
-        With a proven track record of successful project delivery, He aspires to mentor for aspiring
-        international students, sharing his expertise in project management methodologies and guiding
-        them towards achieving their career goals with confidence and efficiency ...
+          Obinna is a project manager on cross-functional projects with experience in higher education marketing. 
+          He was a governor at Coventry University and as Deputy Panel Chair of the Teaching Excellence Framework
+          panel at the Office for Students.He is committed to students skills acquisition and value for money in higher education.
         </p>
         <button className={styles.button}>Read more</button>
       </div>
