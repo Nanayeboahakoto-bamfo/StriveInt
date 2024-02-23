@@ -8,7 +8,7 @@ import { Bag, Atom, Quote } from "@/components/icons";
 import styles from "./mentor-card.module.css"
 import AOS from "aos";
 
-const MentorCard = () => {
+const MentorCard1 = () => {
   useLayoutEffect(() => {
     AOS.init({ once: false, offset: 0 });
   }, []);
@@ -17,26 +17,26 @@ const MentorCard = () => {
     <div data-aos="zoom-in">
       <div className={styles.imageContainer}>
         <Image
-          src="/profile.png"
+          src="/Nana.jpeg"
           alt="mentor"
           fill
           style={{ objectFit: "contain" }}
         />
       </div>
       <div className={styles.wrapper}>
-        <h6 className={styles.heading}>Blessed Pepple</h6>
+        <h6 className={styles.heading}>Nana Yeboah Akoto-Bamfo</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
             <Bag size={20} className={styles.icon} />
-            <span className={styles.categoryText}> Employed At: Quacquarelli-Symonds(QS)</span>
+            <span className={styles.categoryText}>Employed At: National Grid</span>
           </div>
         </div>
         <div className={styles.cover}>
           <div className={styles.flex}>
-            <span className={styles.categoryText}>Job Title: Account Manager</span>
+            <span className={styles.categoryText}>Job Title: Software engineer</span>
           </div>
         </div>
-        <p className={styles.paragraph}>Education:</p>
+        <p className={styles.paragraph}>Education Info:</p>
         <div className={styles.cover}>
           <div className={styles.flex}>
           <Atom size={20} className={styles.icon} />
@@ -46,22 +46,22 @@ const MentorCard = () => {
         <div className={styles.cover}>
           <div className={styles.flex}>
            
-            <span className={styles.categoryText}>Department: Health and Life Science</span>
+            <span className={styles.categoryText}>Department: Engineering & Computing</span>
           </div>
         </div>
         <div className={styles.cover}>
           <div className={styles.flex}>
            
-            <span className={styles.categoryText}>Course: Bsc Biological and Chemical science</span>
+            <span className={styles.categoryText}>Course: Msc Computer Science</span>
           </div>
         </div>
 
         <p className={styles.paragraph}>Bio:</p>
         <p className={styles.paragraph}>
-        I have over six years of experience working in the UK across multiple sectors.
-        My expertise is in business development and managing commercial partnerships for companies. 
-        Currently, I work in the technology industry for a leading service provider in higher education. 
-        I have also spent some time teaching bioscience related courses at university ...
+        Nana is a skilled software engineer who honed his craft at Coventry University. 
+        With a passion for problem-solving and innovation, he excels in developing efficient 
+        and scalable software solutions. Leveraging his education and experience, 
+        Nana thrives in collaborative environments, Choose Nana to be your mentor ...
        
         </p>
         <button className={styles.button}>Read more</button>
@@ -70,4 +70,4 @@ const MentorCard = () => {
   );
 };
 
-export default MentorCard;
+export default MentorCard1;
