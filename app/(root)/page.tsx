@@ -3,6 +3,8 @@ import Company from "./_components/company";
 import EventCard from "./_components/events-card";
 import Hero from "./_components/hero";
 import MentorCard from "./_components/mentor-card";
+import MentorCard1 from "./_components/mentor-card/index1";
+import MentorCard2 from "./_components/mentor-card/index2";
 import StoriesCard from "./_components/stories-card";
 
 import styles from "./page.module.css";
@@ -32,9 +34,9 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.mentorGrid}>
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
+          <MentorCard/>
+          <MentorCard1/>
+          <MentorCard2/>
         </div>
       </div>
       <div className="container">
@@ -47,6 +49,9 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <picture>
+        <img src="/rotateimage.png" alt="" style={{ width: "100%" }} />
+      </picture>
       <div className={styles.storiesBg}>
         <div className="container">
           <div className={styles.content}>
