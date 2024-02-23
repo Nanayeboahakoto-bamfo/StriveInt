@@ -27,6 +27,12 @@ const MentorCard = () => {
         <h6 className={styles.heading}>Blessed Pepple</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
+            <span className={styles.categoryText}> Country: Nigeria</span>
+          </div>
+        </div>
+        <br/>
+        <div className={styles.cover}>
+          <div className={styles.flex}>
             <Bag size={20} className={styles.icon} />
             <span className={styles.categoryText}> Employed At: Quacquarelli-Symonds(QS)</span>
           </div>
@@ -36,7 +42,8 @@ const MentorCard = () => {
             <span className={styles.categoryText}>Job Title: Account Manager</span>
           </div>
         </div>
-        <p className={styles.paragraph}>Education:</p>
+        <br/>
+        <h6 className={styles.heading}>Education:</h6>
         <div className={styles.cover}>
           <div className={styles.flex}>
           <Atom size={20} className={styles.icon} />
@@ -56,7 +63,8 @@ const MentorCard = () => {
           </div>
         </div>
 
-        <p className={styles.paragraph}>Bio:</p>
+        <br/>
+        <h6 className={styles.heading}>Bio:</h6>
         <p className={styles.paragraph}>
         I have over six years of experience working in the UK across multiple sectors.
         My expertise is in business development and managing commercial partnerships for companies. 
